@@ -1,0 +1,86 @@
+body {
+    background-color: #186279;
+    height: 100%;
+    font-family: sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+/* 
+.main {
+    height: 100vh;  width: 100vw;
+} */
+
+.container, .stopwatch {
+    position: absolute;
+    background-color: #232323;
+    height: 350px;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.container {
+    box-shadow: 0 0 5px black;
+}
+
+.stopwatch {
+    height: 90%;
+    width: 90%;
+    border: 3px dashed #2940D3;
+    text-align: center;
+}
+
+.timer {
+    font-size: 4rem;
+    margin-top: 30%;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.timer .millisecs {
+    font-size: 1rem ;
+}
+
+.timer-btns {
+    margin-top: 10%;
+}
+
+button {
+    color: #fff;
+    padding: 4%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    background-color: #2940D3;
+    box-shadow: 0 0 3px black;
+}
+
+.start-btn:hover {
+    background-color: rgb(42, 174, 42);
+}
+.stop-btn:hover {
+    background-color: rgb(228, 46, 46);
+}
+.reset-btn:hover {
+    color: #000;
+    background-color: rgb(171, 175, 149);
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    color: rgb(67, 218, 125);
+}
