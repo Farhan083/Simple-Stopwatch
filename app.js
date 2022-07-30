@@ -16,6 +16,9 @@ let isRunning  = false;
 // functions
 
 function timerCycle() {
+  // whenever this function will run after interval
+  // of 10 ms, the number of millisecnds would have increased
+  // by 10
   numofMilliseconds+=10;
 
   if(numofMilliseconds == 1000){
@@ -33,8 +36,7 @@ function timerCycle() {
     }
   }
 
-  
-  
+   
   milliseconds.innerText = addZeroMS(numofMilliseconds);
   minutes.innerText = addZero(numofMinutes);
   seconds.innerText = addZero(numofSeconds);
@@ -47,14 +49,16 @@ function startTimer() {
   isRunning = true;
   
   
-  stopper = setInterval(timerCycle, 10);
+  stopper = setInterval(timerCycle, 10);  // this method calls
+  // function at specified intervals(in milliseconds)
 }
 
 function stopTimer() {
   if (!isRunning) return;
 
   isRunning = false;
-  clearInterval(stopper);
+  clearInterval(stopper);  // this function stop the execution
+  // of setInterval
 }
 
 function resetTimer() {
